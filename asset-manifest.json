@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.3079a98c.css",
-    "main.js": "/personal-portfolio/static/js/main.2120064e.js",
+    "main.js": "/personal-portfolio/static/js/main.50a8547d.js",
     "static/js/787.fb771931.chunk.js": "/personal-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/header3.svg": "/personal-portfolio/static/media/header3.a4c91204d634306c2708c898b4aa8fc3.svg",
     "static/media/sude-logo.svg": "/personal-portfolio/static/media/sude-logo.59ed4a7d8a591b45d42dad320503fc0a.svg",
@@ -16,7 +16,7 @@
     "static/media/header-img.svg": "/personal-portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/tilevania1.jpg": "/personal-portfolio/static/media/tilevania1.a76af65215d0cfa5030d.jpg",
     "static/media/tilevania2.jpg": "/personal-portfolio/static/media/tilevania2.1282ba4b3c3e6c1b5047.jpg",
-    "static/media/updated_resume.pdf": "/personal-portfolio/static/media/updated_resume.d337aeae3ea51573979c.pdf",
+    "static/media/updated_resume.pdf": "/personal-portfolio/static/media/updated_resume.a4c90152b108d81f081b.pdf",
     "static/media/tilevania3.jpg": "/personal-portfolio/static/media/tilevania3.ed0dd02eebaa1b85e1e0.jpg",
     "static/media/CentraNo2-Bold.ttf": "/personal-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/personal-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -43,11 +43,11 @@
     "static/media/arrow2.svg": "/personal-portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/personal-portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.3079a98c.css.map": "/personal-portfolio/static/css/main.3079a98c.css.map",
-    "main.2120064e.js.map": "/personal-portfolio/static/js/main.2120064e.js.map",
+    "main.50a8547d.js.map": "/personal-portfolio/static/js/main.50a8547d.js.map",
     "787.fb771931.chunk.js.map": "/personal-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3079a98c.css",
-    "static/js/main.2120064e.js"
+    "static/js/main.50a8547d.js"
   ]
 }
