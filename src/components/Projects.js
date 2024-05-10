@@ -1,45 +1,100 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/quizapp1.png";
+import projImg2 from "../assets/img/quizapp2.png";
+import projImg3 from "../assets/img/quizapp3.png";
+import projImg4 from "../assets/img/quizapp4.png";
+import projImg5 from "../assets/img/quizapp5.png";
+import proj2Img1 from "../assets/img/tilevania1.jpg";
+import proj2Img2 from "../assets/img/tilevania2.jpg";
+import proj2mg3 from "../assets/img/tilevania3.jpg";
+import proj3Img1 from "../assets/img/spacegame1.jpg";
+import proj3Img2 from "../assets/img/spacegame2.jpg";
+import proj3Img3 from "../assets/img/spacegame3.jpg";
+import proj3Img4 from "../assets/img/spacegame4.jpg";
+import proj3Img5 from "../assets/img/spacegame5.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const project1 = [
     {
-      title: "Business Startup",
+      size: 2,
+      title: "Quiz App",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      size: 2,
+      title: "Quiz App",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      size: 2,
+      title: "Quiz App",
       description: "Design & Development",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
+      size: 2,
+      title: "Quiz App",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
+      size: 2,
+      title: "Quiz App",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
+    },
+    
+  ];
+
+  const project2 = [
+    {
+      size: 6,
+      title: "TileVania",
+      description: "Design & Development",
+      imgUrl: proj2Img2,
     },
     {
-      title: "Business Startup",
+      size: 6,
+      title: "TileVania",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: proj2mg3,
     },
+  ];
+
+  const project3 = [
+    {
+      size: 3,
+      title: "Space Defender",
+      description: "Design & Development",
+      imgUrl: proj3Img1,
+    },
+    {
+      size: 3,
+      title: "Space Defender",
+      description: "Design & Development",
+      imgUrl: proj3Img3,
+    },
+    {
+      size: 3,
+      title: "Space Defender",
+      description: "Design & Development",
+      imgUrl: proj3Img5,
+    },
+    {
+      size: 3,
+      title: "Space Defender",
+      description: "Design & Development",
+      imgUrl: proj3Img2,
+    },
+    
   ];
 
   return (
@@ -51,7 +106,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Here are some projects I made! </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -66,9 +121,11 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                    <p>This is a quiz game that asks random space-related questions with multiple choice answers. The app fetches random questions from OpenAI by using OpenAI's API. Made with Flutter & Dart </p>
+                    
+                      <Row className="justify-content-center">
                         {
-                          projects.map((project, index) => {
+                          project1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -79,11 +136,36 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <p>TileVania is a 2D side-scrolling platformer game where you control a character who navigates through various levels, jumping over obstacles and reaching the end goal.</p>
+                      <p><a href="https://sudeonder.itch.io/tilevania">Play the game here!</a></p>
+                      <Row className="justify-content-center">
+                        {
+                          project2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>A space defender game where the objective is to destroy alien spaceships. Made with Unity & C#</p>
+                      <Row className="justify-content-center">
+                      {
+                          project3.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

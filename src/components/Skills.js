@@ -1,6 +1,7 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/code.png";
+import meter2 from "../assets/img/game.png";
+import meter3 from "../assets/img/ml.png";
+import meter4 from "../assets/img/mobile.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -40,19 +41,24 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Web Development</h5>
+                                <h6>Node.js / Django / React</h6>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>Game Development</h5>
+                                <h6> OOP / C# / Unity</h6>
+                            </div>
+                            <div className="item">
+                            <img src={meter4} alt="Image" />
+                                <h5>Mobile Development</h5>
+                                <h6>Flutter</h6>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>Machine Learning</h5>
+                                <h6> Python / PyTorch / Numpy / Scikit-learn</h6>
                             </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
+                            
                         </Carousel>
                     </div>
                 </div>
