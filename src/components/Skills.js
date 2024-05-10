@@ -41,7 +41,7 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Web Development</h5>
-                                <h6>Node.js / Django / React</h6>
+                                <h6>Node.js / Django / React / Java</h6>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
