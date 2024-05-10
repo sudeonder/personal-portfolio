@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import resume from "../assets/updated_resume.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -60,7 +61,10 @@ export const Banner = () => {
                   <p>
                   Hi! I'm Sude, a recent Computer Engineering graduate from Middle East Technical University with passion in software engineering, particularly in game development, web development, and machine learning.
                   </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <a href={resume} download="sudeonder_resume" target='_blank'>
+                    <button>Download my resume! <ArrowRightCircle size={25} /></button>
+                  </a>
+                  
               </div>}
             </TrackVisibility>
           </Col>
